@@ -7,13 +7,6 @@ if (isset($_GET['search'])) {
 
  $User = new User();
  $user = $User->search(array('slug' => $slug, 'include_details' => 'investor'));
-
-//vd($user['investor_details']['investments']);
-}
-
-
-if (isset($_GET['vd'])) {
- vd($user);
 }
 ?>
 

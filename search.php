@@ -9,7 +9,7 @@ if (isset($_GET['search'])) {
  $query = isset($_GET['query']) ? ($_GET['query']) : null;
  $type = isset($_GET['type']) ? ($_GET['type']) : 'Startup';
 
- $startups = $Startup->startups($query, $type, $page);
+ $startups = $Startup->startupsWithRaising(array('query' => $query, 'type' => 'Startup', 'filter' => 'raising', 'page' => $page, 'per_page' => '3'));
 } else {
  $startups = $Startup->raising($page)['startups'];
 }
@@ -22,10 +22,6 @@ if ($raising['total'] > 3) {
  $pagination->setCurrent($page);
  $pagination->setTotal($raising['total']);
  $pagination_markup = $pagination->parse();
-}
-
-if (isset($_GET['vd'])) {
- vd($raising);
 }
 ?>
 

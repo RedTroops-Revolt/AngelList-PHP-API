@@ -38,13 +38,14 @@
 	 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Startups <span class="caret"></span></a>
 	 <ul class="dropdown-menu" role="menu">
 	  <li><a href="#">Trending</a></li>
-	  <li><a href="startups_raising.php">Raising</a></li>
+	  <li><a href="index.php">Raising</a></li>
 	 </ul>
 	</li>
 	<li class="dropdown">
 	 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Users <span class="caret"></span></a>
 	 <ul class="dropdown-menu" role="menu">
-	  <li><a href="#">Raising</a></li>
+	  <li><a href="users.php">Profile</a></li>
+	  <li><a href="search.php">Raising</a></li>
 	 </ul>
 	</li>
        </ul>
